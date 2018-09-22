@@ -21,6 +21,6 @@ public class Main extends Application {
     }
 
     Group createMainNode(Stage primaryStage) {
-        return new Group(new Spaceship(primaryStage));
+        return new Group(new SpaceShip(primaryStage));
     }
 }
