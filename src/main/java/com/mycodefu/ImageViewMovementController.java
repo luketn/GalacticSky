@@ -10,7 +10,7 @@ import java.util.concurrent.ConcurrentSkipListSet;
 
 import static com.mycodefu.ImageViewMovementController.Moves.*;
 
-public class ImageViewMovementController extends AnimationTimer {
+public class ImageViewMovementController  {
     private final Set<Moves> moves;
     private Window window;
     private ImageView imageView;
@@ -24,8 +24,7 @@ public class ImageViewMovementController extends AnimationTimer {
         addKeyListeners(window);
     }
 
-    @Override
-    public void handle(long now) {
+    public void update(long now) {
         if (moves.size() > 0) {
             double x = imageView.getX();
             double y = imageView.getY();
